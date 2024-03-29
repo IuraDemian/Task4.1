@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Variant 5 </title>
+</head>
+
+
+
+
+
+<body>
+    <p> Variant 5 </p>
+<script>
+
+let boxApple = parseInt(prompt("Введіть скільки є ящиків на складі"))
+
+while (boxApple > 0)
+
+{
+    let boxLoad = parseInt(prompt(`Введіть скільки треба загрузити, (залишилося ${boxApple})`));
+
+    if (boxLoad <= boxApple && boxLoad > 0)
+    {
+        boxApple -= boxLoad
+    }
+    else
+    {
+        alert("Некоректне або немає стільки ящиків.")
+    }
+}
+
+</script>
+</body>

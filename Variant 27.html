@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Variant 27 </title>
+</head>
+
+
+
+
+
+<body>
+    <p> Variant 27 </p>
+<script>
+
+let distance = 10;
+let totalDistance = 0;
+let day = 0;
+
+while (day <= 7)
+
+{
+    totalDistance += distance;
+    distance *= 1.1
+
+    if (totalDistance > 60) 
+    {
+        alert(`Сумарний шлях перевищить 60 км за ${day} дня`);
+        break;
+    }
+
+    if (distance > 20)
+    {
+        alert(`Спортсмен пробіжить більше 20 км в день ${day}`);
+        break;
+    }
+    day++;
+}
+
+</script>
+</body>

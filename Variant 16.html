@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Variant 16 </title>
+</head>
+
+
+
+
+
+<body>
+    <p> Variant 16 </p>
+<script>
+
+let n = parseInt(prompt("Введіть кількість чисел:"));
+
+let negatives = 0;
+let positives = 0;
+let zeros = 0;
+
+for (let i = 0; i < n; i++)
+{
+    let num = parseFloat(prompt("Введіть число:"));
+
+    if (num < 0)
+    {
+        negatives++;
+    }
+    else if (num > 0)
+    {
+        positives++;
+    }
+    else
+    {
+        zeros++;
+    }
+
+}
+
+alert(`всього негативних - ${negatives}, позитивних - ${positives}, нульових - ${zeros} чисел.`);
+
+</script>
+</body>
